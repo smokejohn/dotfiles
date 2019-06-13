@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-obsession'
 Plug 'machakann/vim-highlightedyank'
 Plug 'sainnhe/vim-color-forest-night'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
