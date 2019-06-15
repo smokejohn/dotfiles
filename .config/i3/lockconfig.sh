@@ -14,7 +14,7 @@ prime='#12bccbff'
 trans='#00000000'
 
 #layout
-radius=120
+radius=150
 ring_width=15
 
 #wrong
@@ -45,11 +45,11 @@ tc_layout=$sd
 tc_wrong=$sd
 
 #textsizes
-t_time=24
-t_verif=20
-t_date=14
-t_layout=14
-t_wrong=20
+t_time=30
+t_verif=30
+t_date=20
+t_layout=20
+t_wrong=30
 
 #fonts
 f_time="Hack"
