@@ -10,6 +10,7 @@ Plug 'tpope/vim-obsession'
 Plug 'machakann/vim-highlightedyank'
 Plug 'sainnhe/vim-color-forest-night'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
 
@@ -36,7 +37,7 @@ set hidden
 
 set termguicolors
 set background=dark
-colorscheme default
+colorscheme onehalfdark
 " hi Normal ctermbg=none guibg=none
 " hi NonText ctermbg=none guibg=none
 
@@ -50,6 +51,15 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set expandtab
+
+" ==================
+"      Commands
+" ==================
+
+augroup Markdown
+    autocmd!
+    autocmd FileType markdown set wrap
+augroup END
 
 " ==================
 "      Bindings
