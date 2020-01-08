@@ -8,7 +8,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-obsession'
 Plug 'machakann/vim-highlightedyank'
-Plug 'sainnhe/vim-color-forest-night'
+Plug 'morhetz/gruvbox'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
@@ -37,7 +37,7 @@ set hidden
 
 set termguicolors
 set background=dark
-colorscheme onehalfdark
+colorscheme gruvbox
 " hi Normal ctermbg=none guibg=none
 " hi NonText ctermbg=none guibg=none
 
