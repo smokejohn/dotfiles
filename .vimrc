@@ -69,5 +69,8 @@ let mapleader = "\<Space>"
 
 inoremap kj <Esc>`^
 cnoremap kj <C-C>
+inoremap KJ <Esc>`^
+cnoremap KJ <C-C>
+tnoremap <Esc> <C-\><C-n>
 
 nnoremap <F5> :put=system('date +%F\ %T')<CR>
