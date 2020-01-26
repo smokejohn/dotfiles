@@ -52,6 +52,10 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
+set foldmethod=indent
+set foldlevelstart=10
+set foldnestmax=1
+
 " ==================
 "      Commands
 " ==================
