@@ -55,6 +55,7 @@ set expandtab
 set foldmethod=indent
 set foldlevelstart=10
 set foldnestmax=1
+set foldignore=
 
 " ==================
 "      Commands
