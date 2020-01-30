@@ -6,8 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-export PATH
+
 
 export PS1="\[$(tput bold)$(tput setaf 9)\][\u@\h \w]$ \[$(tput sgr0)\]"
 export LS_COLORS="di=1;35"
