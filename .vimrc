@@ -12,8 +12,17 @@ Plug 'morhetz/gruvbox'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'yamahigashi/sendtomaya.vim'
 
 call plug#end()
+
+" =========================
+"      Plugin Settings
+" =========================
+
+let g:send_to_maya_host="localhost"
+let g:send_to_maya_port=23456
+nnoremap <F6> :SendToMayaPy<CR>
 
 " ========================
 "      Basic Settings
@@ -80,6 +89,7 @@ cnoremap KJ <C-C>
 tnoremap <Esc> <C-\><C-n>
 
 nnoremap <F5> :put=system('date +%F\ %T')<CR>
+nnoremap <C-c> :bp\|bd #<CR>
 
 " =======================
 "      Abbreviations
