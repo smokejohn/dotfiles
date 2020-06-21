@@ -10,5 +10,7 @@
             "filetypes": ["sh"],
             "ignoredRootPaths": ["~"]
         }
-    }
+    },
+
+    "cmake.cmakePath": "/usr/bin/cmake"
 }
