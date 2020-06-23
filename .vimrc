@@ -89,7 +89,8 @@ cnoremap KJ <C-C>
 tnoremap <Esc> <C-\><C-n>
 
 nnoremap <F5> :put=system('date +%F\ %T')<CR>
-nnoremap <C-c> :bp\|bd #<CR>
+nnoremap <C-x> :bp\|bd #<CR>
+
 
 " =======================
 "      Abbreviations
