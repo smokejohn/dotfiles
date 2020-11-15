@@ -11,7 +11,9 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'morhetz/gruvbox'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'dart-lang/dart-vim-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'kevinoid/vim-jsonc'
 Plug 'yamahigashi/sendtomaya.vim'
 
 call plug#end()
@@ -32,7 +34,6 @@ set laststatus=2
 set nocompatible
 set number
 
-set autoindent
 set incsearch
 set hlsearch
 set showcmd
@@ -57,10 +58,14 @@ colorscheme gruvbox
 " 	au ColorScheme * hi NonText ctermbg=none guibg=none
 " augroup END
 
+set expandtab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
-set expandtab
+
+set autoindent
+set smartindent
+set cindent
 
 set foldmethod=indent
 set foldlevelstart=10
