@@ -15,6 +15,7 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kevinoid/vim-jsonc'
 Plug 'yamahigashi/sendtomaya.vim'
+Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
@@ -25,6 +26,9 @@ call plug#end()
 let g:send_to_maya_host="localhost"
 let g:send_to_maya_port=23456
 nnoremap <F6> :SendToMayaPy<CR>
+
+let g:clang_format#style_options = {
+            \ "ColumnLimit" : 120}
 
 " ========================
 "      Basic Settings
