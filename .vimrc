@@ -4,18 +4,26 @@
 
 call plug#begin('~/.vim/plugged')
 
+" Usability
+Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-obsession'
 Plug 'machakann/vim-highlightedyank'
-Plug 'morhetz/gruvbox'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'dart-lang/dart-vim-plugin'
+" IDE plugins
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'kevinoid/vim-jsonc'
-Plug 'yamahigashi/sendtomaya.vim'
 Plug 'rhysd/vim-clang-format'
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-hijack.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" Language plugins
+Plug 'tikhomirov/vim-glsl'
+Plug 'kevinoid/vim-jsonc'
+Plug 'dart-lang/dart-vim-plugin'
+" Misc
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'yamahigashi/sendtomaya.vim'
 
 call plug#end()
 
@@ -23,12 +31,19 @@ call plug#end()
 "      Plugin Settings
 " =========================
 
+" C++
+let g:clang_format#style_options = {
+            \ "ColumnLimit" : 120}
+
+" Dart
+let g:dart_style_guide = 2
+let g:dart_format_on_save = 1
+let g:dartfmt_options = ['--line-length' , '120']
+
+" SendToMaya
 let g:send_to_maya_host="localhost"
 let g:send_to_maya_port=23456
 nnoremap <F6> :SendToMayaPy<CR>
-
-let g:clang_format#style_options = {
-            \ "ColumnLimit" : 120}
 
 " ========================
 "      Basic Settings
@@ -53,15 +68,8 @@ set hidden
 set termguicolors
 set background=dark
 colorscheme gruvbox
-" hi Normal ctermbg=none guibg=none
-" hi NonText ctermbg=none guibg=none
 
-" augroup bgtrans
-" 	au!
-" 	au ColorScheme * hi Normal ctermbg=none guibg=none
-" 	au ColorScheme * hi NonText ctermbg=none guibg=none
-" augroup END
-
+" Tab settings
 set expandtab
 set shiftwidth=4
 set tabstop=4
