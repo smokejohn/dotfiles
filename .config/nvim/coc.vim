@@ -141,14 +141,3 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Clangd jump to header file / source file
 nnoremap <silent> <space>h  :<C-u>CocCommand clangd.switchSourceHeader<CR>
-
-" coc-snippets settings
-"
-" Use <C-l> for trigger snippet expand.
-imap <C-l> <Plug>(coc-snippets-expand)
-
-" Use <C-j> for jump to next placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<c-j>'
-
-" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<c-k>'

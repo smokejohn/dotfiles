@@ -17,6 +17,7 @@ Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-hijack.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'SirVer/ultisnips'
 " Language plugins
 Plug 'tikhomirov/vim-glsl'
 Plug 'kevinoid/vim-jsonc'
@@ -30,6 +31,11 @@ call plug#end()
 " =========================
 "      Plugin Settings
 " =========================
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<c-l>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " C++
 let g:clang_format#style_options = {
