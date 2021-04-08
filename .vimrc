@@ -22,6 +22,7 @@ Plug 'SirVer/ultisnips'
 Plug 'tikhomirov/vim-glsl'
 Plug 'kevinoid/vim-jsonc'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'peterhoeg/vim-qml'
 " Misc
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'yamahigashi/sendtomaya.vim'
