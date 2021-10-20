@@ -7,7 +7,7 @@ fi
 
 # User specific environment
 
-export PS1="\[$(tput bold)$(tput setaf 9)\][\u@\h \w]$ \[$(tput sgr0)\]"
+export PS1="\[$(tput bold)$(tput setaf 6)\][\u@\h \w]$ \[$(tput sgr0)\]"
 export LS_COLORS="di=1;35"
 
 alias ls='ls --color=auto'
