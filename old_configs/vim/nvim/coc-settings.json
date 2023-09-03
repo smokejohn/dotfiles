@@ -1,0 +1,17 @@
+{
+    "python.jediEnabled": false,
+
+    "languageserver": 
+    {
+        "bash": 
+        {
+            "command": "bash-language-server",
+            "args": ["start"],
+            "filetypes": ["sh"],
+            "ignoredRootPaths": ["~"]
+        }
+    },
+
+    "cmake.cmakePath": "/usr/bin/cmake",
+    "clangd.path": "/home/nidus/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
+}
