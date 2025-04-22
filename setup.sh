@@ -27,6 +27,10 @@ cp "${SCRIPT_DIR}"/.config/tmux/* "${HOME}"/.config/tmux
 ######################################
 
 sudo dnf install -y gcc make git ripgrep fd-find unzip neovim
+# neovim python setup
+sudo dnf install -y python3-pip python3-neovim
+# neovim c++ setup
+sudo dnf install -y gcc-c++
 
 mkdir -p "${HOME}"/.config/nvim
 git clone git@github.com:smokejohn/kickstart.nvim.git "${HOME}"/.config/nvim/
