@@ -16,6 +16,9 @@ cp "${SCRIPT_DIR}"/bash/.bash_profile "${HOME}"/
 
 sudo dnf install -y kitty tmux
 
+# install fonts
+cp "${SCRIPT_DIR}"/fonts/CaskaydiaCoveNerdFont/* "${HOME}"/.local/share/fonts/
+
 mkdir -p "${HOME}"/.config/kitty
 cp "${SCRIPT_DIR}"/.config/kitty/* "${HOME}"/.config/kitty
 
